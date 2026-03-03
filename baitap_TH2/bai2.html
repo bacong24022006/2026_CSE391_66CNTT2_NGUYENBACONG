@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaiTH2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #4b1248;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+      }
+
+      /* ===== KHUNG LỚN ===== */
+      .wrapper {
+        width: 1100px;
+        border: 4px solid #e00d9d;
+        background: white;
+      }
+
+      /* ===== HEADER ===== */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 40px;
+      }
+
+      /* LOGO */
+      .logo {
+        color: #ffd700;
+        font-size: 24px;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      /* Ô vàng */
+      .nav-box {
+        border: 3px solid #ffd700;
+        padding: 8px 18px;
+      }
+
+      .nav-box a {
+        color: #ffd700;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      .nav-box a:first-child {
+        margin-left: 0;
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        height: 450px;
+        background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+          center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid #dcbe17;
+        border-bottom: 4px solid #d80f9c;
+      }
+
+      .hero-box {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 40px 70px;
+        text-align: center;
+        color: white;
+        border-radius: 6px;
+      }
+
+      .hero-box h1 {
+        margin-bottom: 10px;
+      }
+
+      .hero-box button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: yellow;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      /* ===== HIGHLIGHTS ===== */
+      .highlights {
+        background: #cdeaea;
+        padding: 50px 40px;
+        text-align: center;
+        border-bottom: 4px solid #eb0c7f;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .card {
+        width: 280px;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .card p {
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background: #111;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+      }
+      footer span {
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">TRAVEL GOALS</div>
+
+        <nav class="nav-box">
+          <a href="#">Destinations</a>
+          <a href="#">About</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-box">
+          <h1>JOE'S TRAVEL PAGE</h1>
+          <p>LET'S EXPLORE THE WORLD TOGETHER</p>
+          <button>Discover places</button>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <h2>HIGHLIGHTS</h2>
+
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad"
+            />
+            <p>MIAMI USA</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba"
+            />
+            <p>MUNICH GERMANY</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+            />
+            <p>BARCELONA SPAIN</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>📷</span>
+        <span>📘</span>
+      </footer>
+    </div>
+  </body>
+</html>
