@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Tiêu đề trang</h1>
+
+    <p class="text">Đoạn văn 1</p>
+    <p class="text">Đoạn văn 2</p>
+    <p class="text">Đoạn văn 3</p>
+
+    <script>
+      // querySelector
+      const firstParagraph = document.querySelector(".text");
+      console.log(firstParagraph);
+
+      // querySelectorAll
+      const allParagraphs = document.querySelectorAll(".text");
+      console.log(allParagraphs);
+
+      // getElementById
+      const title = document.getElementById("title");
+      console.log(title);
+    </script>
+  </body>
+</html>

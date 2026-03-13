@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Thực hành JavaScript</h1>
+
+    <h2>1. EVENTS</h2>
+
+    <button id="btnClick">Click me</button>
+    <p id="resultClick"></p>
+
+    <input id="inputKey" placeholder="Nhấn phím..." />
+    <p id="resultKey"></p>
+
+    <form id="formDemo">
+      <input id="inputForm" placeholder="Nhập tên" />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="resultForm"></p>
+
+    <h3>Event Bubbling</h3>
+
+    <div id="ong" class="box">
+      Ông
+      <div id="cha" class="box">
+        Cha
+        <div id="con" class="box">Con</div>
+      </div>
+    </div>
+
+    <div id="resultBubble"></div>
+
+    <h3>Event Delegation</h3>
+
+    <ul id="list">
+      <li>Mục 1 <button class="btn-xoa">Xóa</button></li>
+      <li>Mục 2 <button class="btn-xoa">Xóa</button></li>
+    </ul>
+
+    <button id="btnThem">Thêm mục</button>
+
+    <hr />
+
+    <h2>2. PROMISES</h2>
+
+    <button id="btnPromise">Chạy Promise</button>
+    <p id="resultPromise"></p>
+
+    <button id="btnChain">Chain Promise</button>
+    <p id="resultChain"></p>
+
+    <button id="btnError">Test lỗi</button>
+    <p id="resultError"></p>
+
+    <button id="btnCallback">Callback → Promise</button>
+    <p id="resultCallback"></p>
+
+    <hr />
+
+    <h2>3. ASYNC/AWAIT + FETCH</h2>
+
+    <button id="btnAsync">Async/Await</button>
+    <p id="resultAsync"></p>
+
+    <button id="btnFetch">Fetch API</button>
+    <p id="resultFetch"></p>
+
+    <button id="btnHienThi">Hiển thị Users</button>
+    <button id="btnXoa">Xóa</button>
+
+    <div id="userList"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

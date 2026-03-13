@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .active {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="myImage" src="https://via.placeholder.com/150" width="150" />
+
+    <div id="box">Nội dung div</div>
+
+    <script>
+      const img = document.getElementById("myImage");
+
+      // thay đổi src
+      img.src = "https://picsum.photos/200";
+
+      // thao tác class
+      const box = document.getElementById("box");
+
+      box.classList.add("active");
+
+      box.classList.remove("active");
+
+      box.classList.toggle("active");
+
+      console.log(box.classList.contains("active"));
+    </script>
+  </body>
+</html>

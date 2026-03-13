@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Listeners</title>
+
+    <style>
+      .active {
+        background-color: rgb(230, 194, 173);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 id="text">Nội dung ban đầu</h2>
+
+    <button id="btn">Click me</button>
+
+    <script>
+      const button = document.getElementById("btn");
+      const text = document.getElementById("text");
+
+      // click
+      button.addEventListener("click", function () {
+        text.textContent = "Bạn vừa click nút!";
+      });
+
+      // nhiều listener
+      button.addEventListener("click", function () {
+        console.log("Button clicked");
+      });
+
+      // mouseenter
+      button.addEventListener("mouseenter", function () {
+        button.textContent = "Đang hover";
+      });
+
+      // mouseleave
+      button.addEventListener("mouseleave", function () {
+        button.textContent = "Click me";
+      });
+
+      // toggle class
+      button.addEventListener("click", function () {
+        document.body.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

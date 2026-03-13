@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Tiêu đề ban đầu</h1>
+
+    <div id="content"></div>
+
+    <ul id="list">
+      <li>Mục 1</li>
+      <li id="deleteItem">Mục 2</li>
+    </ul>
+
+    <script>
+      // Thay đổi textContent
+      const title = document.getElementById("title");
+      title.textContent = "Tiêu đề đã thay đổi";
+
+      // Chèn HTML vào div
+      const content = document.getElementById("content");
+      content.innerHTML = "<p>Nội dung được thêm bằng innerHTML</p>";
+
+      // Tạo thẻ li mới
+      const newItem = document.createElement("li");
+      newItem.textContent = "Mục 3";
+
+      // Append vào ul
+      const list = document.getElementById("list");
+      list.append(newItem);
+
+      // Xóa phần tử
+      const item = document.getElementById("deleteItem");
+      item.remove();
+    </script>
+  </body>
+</html>
