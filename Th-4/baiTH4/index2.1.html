@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="form">
+      <h2>Đăng ký</h2>
+
+      <input type="text" id="fullname" placeholder="Họ tên" />
+      <p id="nameCount">0/50</p>
+      <span class="error" id="fullnameError"></span>
+
+      <input type="text" id="email" placeholder="Email" />
+      <span class="error" id="emailError"></span>
+
+      <input type="text" id="phone" placeholder="SĐT" />
+      <span class="error" id="phoneError"></span>
+
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Mật khẩu" />
+        <span id="togglePass">👁</span>
+      </div>
+
+      <div id="strengthBar">
+        <div id="strength"></div>
+      </div>
+      <p id="strengthText"></p>
+
+      <span class="error" id="passwordError"></span>
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Xác nhận mật khẩu"
+      />
+      <span class="error" id="confirmPasswordError"></span>
+
+      <button type="submit">Đăng ký</button>
+    </form>
+
+    <h3 id="success"></h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>

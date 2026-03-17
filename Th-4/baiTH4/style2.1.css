@@ -1,0 +1,72 @@
+body {
+  font-family: Arial;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+#nameCount {
+  font-size: 12px;
+  text-align: right;
+}
+
+.password-box {
+  position: relative;
+}
+
+#togglePass {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#strengthBar {
+  height: 5px;
+  background: #ddd;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#strength {
+  height: 5px;
+  width: 0%;
+  border-radius: 5px;
+}
+
+#strengthText {
+  font-size: 12px;
+}
